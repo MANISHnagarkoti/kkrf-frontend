@@ -1,4 +1,5 @@
 import React from "react";
+import CountUp from "react-countup";
 
 const OurStats = () => {
   return (
@@ -7,19 +8,28 @@ const OurStats = () => {
         <div className="">
           <div className="">
             <span className="text-2xl md:text-4xl font-bold text-colorThree">
-              {" "}
-              7{" "}
+              <CountUp
+
+                start={300}
+                end={7}
+                duration={3}
+              />
             </span>{" "}
             Years
           </div>
           <div>of Experience</div>
+
         </div>
 
         <div>
           <div>
             <span className="text-2xl md:text-4xl font-bold text-colorThree">
-              {" "}
-              400{" "}
+              <CountUp
+
+                start={0}
+                end={400}
+                duration={3}
+              />
             </span>{" "}
             +
           </div>
@@ -29,8 +39,12 @@ const OurStats = () => {
         <div>
           <div>
             <span className="text-2xl md:text-4xl font-bold text-colorThree">
-              {" "}
-              7{" "}
+              <CountUp
+
+                start={300}
+                end={7}
+                duration={3}
+              />
             </span>{" "}
             +
           </div>
@@ -42,3 +56,4 @@ const OurStats = () => {
 };
 
 export default OurStats;
+

@@ -16,7 +16,7 @@ const Whatsapp = () => {
 
   return (
     <div
-      className={`fixed space-y-4 bottom-5 left-5 w-[100px] flex flex-col items-center opacity-100 transition-all duration-200 translate-y-0 ${
+      className={`fixed space-y-4 bottom-5 left-5 w-[100px] flex z-40 flex-col items-center opacity-100 transition-all duration-200 translate-y-0 ${
         checkScroll && " pointer-events-none !opacity-0 !translate-y-9"
       }`}
     >

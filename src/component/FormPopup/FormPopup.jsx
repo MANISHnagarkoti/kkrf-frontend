@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import ThankyouPop from "../ThankyouPop/ThankyouPop";
 
-const FormPopup = () => {
-  const [pop, setPop] = useState(false);
+const FormPopup = ({ pop, setPop }) => {
+
   const [thankyouPopup, setThanksPopup] = useState(false);
 
   const [formData, setFormData] = useState({
@@ -36,7 +36,7 @@ const FormPopup = () => {
       return alert("Please enter your company name.");
     }
 
-    console.log("Form data:", formData); // Debug log to check if this executes
+    console.log("Form data:", formData);
 
     fetch("https://kkrfgroup.com/submit.php", {
       method: "POST",
@@ -68,46 +68,29 @@ const FormPopup = () => {
       });
   };
 
-  // {{{{{{{{{pop up timer 9 sec}}}}}}}}}
-  useEffect(() => {
-    setTimeout(() => {
-      setPop(true);
-    }, 12000);
-  }, []);
+
 
   return (
     <>
       {/* {{{{{{{{{{{Contact us form pop up}}}}}}}}}}} */}
       <ThankyouPop setPop={setThanksPopup} pop={thankyouPopup} />
       <div
-        className={`fixed top-0 bg-black/70 w-full h-screen left-0  flex justify-center items-center pointer-events-none opacity-0 transition-all duration-150 ${
-          pop && ` opacity-100 pointer-events-auto`
-        }`}
+        className={`fixed top-0 bg-black/70 w-full h-screen left-0  flex justify-center items-center pointer-events-none z-50 opacity-0 transition-all duration-150  ${pop && ` opacity-100 pointer-events-auto`
+          }`}
       >
-        <div className="w-[300px] lg:w-[30%] ">
+        <div className={`w-[300px] lg:w-[30%]  transition-all duration-200 scale-90 translate-y-80 ${ pop && `!translate-y-0 !scale-100`}`}>
           <div>
-            <div className="p-6 bg-colorTwo text-white rounded-t-lg text-lg font-semibold relative flex justify-between items-center">
+            <div className="px-9 py-6 bg-colorTwo text-white rounded-t-xl text-lg font-semibold relative flex justify-between items-center">
               <div>Request a callback</div>
 
-              <svg
-                onClick={() => setPop(false)}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6 cursor-pointer"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" onClick={() => setPop(false)} fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 cursor-pointer">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
               </svg>
+
             </div>
             <form
               onSubmit={handleSubmit} // Handle form submission
-              className="space-y-6 shadow-2xl w-full bg-white p-6 rounded-b-lg relative"
+              className="space-y-6 shadow-2xl w-full bg-white p-9 px-6 md:px-9 rounded-b-xl relative"
             >
               <div>
                 <input
@@ -145,12 +128,14 @@ const FormPopup = () => {
                   onChange={handleChange} // Handle change
                 />
               </div>
-              <button
-                type="submit" // Submit button
-                className="bg-colorThree mt-4 w-full rounded-xl py-3 text-white font-bold"
-              >
-                Submit
-              </button>
+              <div>
+                <button
+                  type="submit" // Submit button
+                  className="bg-colorThree mt-4 w-full rounded-xl py-3 text-base text-white font-semibold"
+                >
+                  Submit
+                </button>
+              </div>
             </form>
           </div>
         </div>

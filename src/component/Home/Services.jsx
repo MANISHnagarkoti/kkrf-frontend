@@ -8,7 +8,7 @@ const Services = () => {
         <div className="text-4xl font-semibold text-center text-gray-100">
           <span className="text-colorThree font-semibold"> Ours </span> Services
         </div>
-        <div className="text-gray-300 mt-4 text-sm max-w-[600px] m-auto">
+        <div className="text-gray-300 mt-4 text-sm max-w-[600px] m-auto" data-aos="fade-up">
           We provide a wide range of services to help businesses succeed in
           their goals . Our services are designed to meet the unique needs of
           each client and are delivered by a team of experienced professionals

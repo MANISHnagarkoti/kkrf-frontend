@@ -9,6 +9,7 @@ import Services from "../../component/Home/Services";
 import Experiences from "../../component/Home/Experiences";
 import Talk from "../../component/Home/Talk";
 import Technology from "../../component/Home/Technology";
+import BoxComponent from "../../component/Home/Box";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <Work />
       <Experiences />
       <Services />
+      <BoxComponent/>
       <Technology/>
       <Talk/>
       <Clients />

@@ -52,7 +52,7 @@ const Navbar = () => {
               />
             </svg>
 
-            <ul className=" absolute group-hover:opacity-100 font-medium  transition-all duration-200  opacity-0 group-hover:pointer-events-auto pointer-events-none bg-gray-100 w-[250px] bottom-0 z-50 translate-y-full rounded-lg p-3 shadow-2xl space-y-5 text-sm">
+            <ul className=" absolute group-hover:opacity-100 font-medium  transition-all duration-200 text-white opacity-0 group-hover:pointer-events-auto pointer-events-none bg-colorTwo w-[200px] bottom-0 z-50 translate-y-full rounded-lg p-6 shadow-2xl space-y-5 text-sm">
               <Link to={"/web-designing"}>
                 {" "}
                 <li className="cursor-pointer">Website Designing</li>
@@ -106,9 +106,8 @@ const Navbar = () => {
 
       {/* {{{{{{{{{{{{phone menu start}}}}}}}}}}}} */}
       <div
-        className={`fixed top-0 left-0 bg-colorTwo shadow-xl text-gray-100 h-screen z-50 w-[300px] py-8 px-3 text-lg  opacity-0  transition-all duration-150 lg:hidden pointer-events-none translate-x-[-100px] ${
-          menu && `h-auto opacity-100 !translate-x-0 !pointer-events-auto`
-        }`}
+        className={`fixed top-0 left-0 bg-colorTwo shadow-xl text-gray-100 h-screen z-50 w-[300px] py-8 px-3 text-lg  opacity-0  transition-all duration-150 lg:hidden pointer-events-none translate-x-[-100px] ${menu && `h-auto opacity-100 !translate-x-0 !pointer-events-auto`
+          }`}
       >
         <div className="flex justify-between items-center">
           <div className="text-2xl font-semibold text-white">Menu</div>
@@ -153,9 +152,8 @@ const Navbar = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className={`w-4 h-4 cursor-pointer ${
-                  serviceMenu && `rotate-180`
-                }`}
+                className={`w-4 h-4 cursor-pointer ${serviceMenu && `rotate-180`
+                  }`}
               >
                 <path
                   strokeLinecap="round"
@@ -165,9 +163,8 @@ const Navbar = () => {
               </svg>
             </div>
             <ul
-              className={`ms-3 space-y-2 h-0 overflow-hidden transition-all duration-150 text-sm text-gray-400 ${
-                serviceMenu && `h-auto mt-2`
-              }`}
+              className={`ms-3 space-y-2 h-0 overflow-hidden transition-all duration-150 text-sm text-gray-400 ${serviceMenu && `h-auto mt-2`
+                }`}
             >
               <Link to={"/web-designing"}>
                 {" "}

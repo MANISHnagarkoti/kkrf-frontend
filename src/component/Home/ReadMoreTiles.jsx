@@ -4,25 +4,39 @@ const ReadMoreTiles = ({ children, title }) => {
   const [expand, setExpand] = useState(false);
   const ref = useRef(null);
   const [showbtn, setShowBtn] = useState();
+  const [hei, setHei] = useState(null)
+
   useEffect(() => {
     // Check if content exceeds 12 lines
     // console.log(ref.current.scrollHeight, ref.current.clientHeight);
+
+    window.addEventListener("resize", () => {
+      setHei(ref.current.scrollHeight)
+    })
+
+
+
     if (ref.current.scrollHeight > ref.current.clientHeight) {
       setShowBtn(true);
+    } else {
+      setShowBtn(false);
     }
-  }, []);
+  }, [hei , expand]);
+
+
 
   return (
-    <div className="border border-colorTwo rounded-lg p-5 bg-colorTwo text-white shadow-xl">
+    <div className="border border-colorTwo rounded-lg p-9 bg-colorTwo text-white shadow-xl">
+
+    
       <div>
         <div className="text-2xl mt-2 font-semibold">{title}</div>
       </div>
 
       <div
         ref={ref}
-        className={`text-gray-300 mt-12 line-clamp-[9] read-more-content ${
-          expand && `!line-clamp-none`
-        }`}
+        className={`text-gray-300 mt-12 line-clamp-[6] read-more-content ${expand && `!line-clamp-none`
+          }`}
       >
         {children}
       </div>

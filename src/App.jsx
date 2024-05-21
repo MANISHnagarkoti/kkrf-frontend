@@ -14,9 +14,27 @@ import Widget from "./component/widget/Widget";
 import ScrollToTop from "./component/Home/Scrollup";
 import FormPopup from "./component/FormPopup/FormPopup";
 import Whatsapp from "./component/whatsapp/Whatsapp";
-
+import { useEffect, useState } from "react";
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 function App() {
+
+  const [pop, setPop] = useState(false);
+
+  useEffect(() => {
+
+    Aos.init({ duration: 800 })
+
+    setTimeout(() => {
+      setPop(true);
+    }, 10000);
+
+  }, [])
+
+
+
+
 
   return (
     <>
@@ -49,7 +67,7 @@ function App() {
         {/* {{{{{{{{{{{Message and call us widget}}}}}}}}}}} */}
         <Widget />
         {/* {{{{{{{{{{{Contact us form pop up}}}}}}}}}}} */}
-        <FormPopup />
+        <FormPopup setPop={setPop} pop={pop} />
         {/* {{{{{{{{{{{Whatsapp widget}}}}}}}}}}} */}
         <Whatsapp />
       </Router>

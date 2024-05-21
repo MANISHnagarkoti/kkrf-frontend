@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import ReadMoreTiles from "../../component/Home/ReadMoreTiles";
+
 
 const Webdesigning = () => {
   const [active, setActive] = useState(0);
@@ -150,211 +152,119 @@ const Webdesigning = () => {
 
       {/* Types */}
 
-      <div className="mt-24">
-        <div className="font-bold text-4xl text-center">Types of websites</div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 container mt-12">
-          <div className="border border-colorTwo rounded-lg p-5 bg-colorTwo text-white shadow-xl">
-            <div>
-              <div className="text-3xl mt-2 font-semibold">
-                Static Website Designing
-              </div>
-            </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-9 container mt-12 items-start">
+        <ReadMoreTiles title={"Static Website Designing"}>
+          A static website is a type of website that consists of a set of HTML
+          pages that remain unchanged until they are manually updated. Unlike
+          dynamic websites, which retrieve information from a database and
+          display it in real-time, static websites are pre-built and display the
+          same content to all users.
+          <br />
+          <br />
+          One of the main benefits of a static website is its simplicity.
+          Because they do not require a database or server-side scripting, they
+          are easy to create, host, and maintain. This makes them ideal for
+          small businesses, personal websites, and portfolios, where the focus
+          is on showcasing content rather than providing interactive
+          experiences.
+          <br /> <br />
+          Static websites also load faster than dynamic websites, as they do not
+          require complex processes to retrieve information from a database.
+          This can improve the user experience, especially on mobile devices
+          with slow internet connections. Another advantage of static websites
+          is their improved security. Because they do not use databases or
+          server-side scripting, they are less vulnerable to hacking and other
+          security threats.
+          <br />
+          <br />
+          In conclusion, a static website is a great choice for businesses or
+          individuals who want a simple, fast, and secure website that showcases
+          content without the need for dynamic features. If you’re looking for a
+          no-fuss solution for your online presence, a static website is a great
+          place to start.
+        </ReadMoreTiles>
 
-            <div className="text-gray-300 mt-6">
-              A static website is a type of website that consists of a set of
-              HTML pages that remain unchanged until they are manually updated.
-              Unlike dynamic websites, which retrieve information from a
-              database and display it in real-time, static websites are
-              pre-built and display the same content to all users.
-              <br />
-              <br />
-              One of the main benefits of a static website is its simplicity.
-              Because they do not require a database or server-side scripting,
-              they are easy to create, host, and maintain. This makes them ideal
-              for small businesses, personal websites, and portfolios, where the
-              focus is on showcasing content rather than providing interactive
-              experiences.
-              <br /> <br />
-              Static websites also load faster than dynamic websites, as they do
-              not require complex processes to retrieve information from a
-              database. This can improve the user experience, especially on
-              mobile devices with slow internet connections. Another advantage
-              of static websites is their improved security. Because they do not
-              use databases or server-side scripting, they are less vulnerable
-              to hacking and other security threats.
-              <br />
-              <br />
-              In conclusion, a static website is a great choice for businesses
-              or individuals who want a simple, fast, and secure website that
-              showcases content without the need for dynamic features. If you’re
-              looking for a no-fuss solution for your online presence, a static
-              website is a great place to start.
-            </div>
+        <ReadMoreTiles title={"Website Designing Services"}>
+          Having a strong online presence is crucial for any business in today’s
+          digital world. A well-designed website is the foundation of your
+          online presence, serving as a virtual storefront that showcases your
+          products, services, and brand. A professional, user-friendly, and
+          SEO-friendly website not only enhances your credibility but also
+          attracts new customers and drives conversions. That’s why website
+          design services are crucial for businesses of all sizes and
+          industries.
+          <br />
+          <br />
+          In today’s competitive online marketplace, having a visually appealing
+          and functional website is not enough. Your website must be optimized
+          for search engines, mobile devices, and user experience to stand out
+          from the crowd. That’s why website design services are more important
+          than ever
+        </ReadMoreTiles>
 
-            <Link
-              to={"/website-types"}
-              className="bg-colorThree  px-8 py-3 text-white font-semibold  text-xs rounded-full  mt-9 inline-block"
-            >
-              Read more
-            </Link>
-          </div>
+        <ReadMoreTiles title={"E- commerce websites"}>
+          An e-commerce website is an online platform where businesses sell
+          their products or services to customers over the internet. It allows
+          users to browse through a variety of items, make purchases, and
+          complete transactions entirely online. These websites often feature
+          secure payment gateways to ensure the safety of financial
+          transactions. Ecommerce sites enable businesses to reach a global
+          audience, provide convenient shopping experiences, and streamline the
+          buying process for both consumers and sellers. They play a pivotal
+          role in today's digital economy, facilitating seamless transactions
+          and fostering economic growth across various industries.
+        </ReadMoreTiles>
 
-          <div className="border border-colorTwo rounded-lg p-5 bg-colorTwo text-white shadow-xl">
-            <div>
-              <div className="text-3xl mt-2 font-semibold">
-                Website Designing Services
-              </div>
-            </div>
+        <ReadMoreTiles title={"IDEA BASED WEBSITES"}>
+          An idea-based website is a digital platform centered around sharing
+          and exploring concepts, innovations, or creative thoughts. Unlike
+          traditional websites that focus on selling products or providing
+          information, idea-based websites serve as forums for brainstorming,
+          collaboration, and inspiration. These sites often feature
+          usergenerated content, discussions, and multimedia presentations to
+          foster engagement and exchange of ideas among a community of users.
+          Idea-based websites.
+        </ReadMoreTiles>
 
-            <div className="text-gray-300 mt-6">
-              Having a strong online presence is crucial for any business in
-              today’s digital world. A well-designed website is the foundation
-              of your online presence, serving as a virtual storefront that
-              showcases your products, services, and brand. A professional,
-              user-friendly, and SEO-friendly website not only enhances your
-              credibility but also attracts new customers and drives
-              conversions. That’s why website design services are crucial for
-              businesses of all sizes and industries.
-              <br />
-              <br />
-              In today’s competitive online marketplace, having a visually
-              appealing and functional website is not enough. Your website must
-              be optimized for search engines, mobile devices, and user
-              experience to stand out from the crowd. That’s why website design
-              services are more important than ever
-            </div>
+        <ReadMoreTiles title={"CORPORATE WEBSITES"}>
+          A corporate website serves as the digital face of a company, providing
+          a comprehensive overview of its identity, offerings, and values to
+          various stakeholders. It acts as a central hub for showcasing products
+          or services, sharing company news and updates, and facilitating
+          communication with customers, investors, and job seekers. Corporate
+          websites are meticulously crafted to reflect the brand's personality
+          and establish credibility, often featuring sleek designs, compelling
+          content, and user-friendly interfaces. They play a crucial role in
+          building brand awareness, fostering customer trust, and driving
+          business growth by serving as a primary touchpoint for online
+          interactions and engagements. Additionally, corporate websites serve
+          as valuable platforms for promoting corporate social responsibility
+          initiatives, attracting talent, and maintaining transparent
+          communication with stakeholders, contributing to the overall success
+          and reputation of the company.
+        </ReadMoreTiles>
 
-            <Link
-              to={"/website-types"}
-              className="bg-colorThree  px-8 py-3 text-white font-semibold  text-xs rounded-full  mt-9 inline-block"
-            >
-              Read more
-            </Link>
-          </div>
-
-          <div className="border border-colorTwo rounded-lg p-5 bg-colorTwo text-white shadow-xl">
-            <div>
-
-              <div className="text-3xl mt-2 font-semibold">
-                E- commerce websites
-              </div>
-            </div>
-
-            <div className="text-gray-300 mt-6">
-              An e-commerce website is an online platform where businesses sell
-              their products or services to customers over the internet. It
-              allows users to browse through a variety of items, make purchases,
-              and complete transactions entirely online. These websites often
-              feature secure payment gateways to ensure the safety of financial
-              transactions. Ecommerce sites enable businesses to reach a global
-              audience, provide convenient shopping experiences, and streamline
-              the buying process for both consumers and sellers. They play a
-              pivotal role in today's digital economy, facilitating seamless
-              transactions and fostering economic growth across various
-              industries.
-            </div>
-
-            <Link
-              to={"/website-types"}
-              className="bg-colorThree  px-8 py-3 text-white font-semibold  text-xs rounded-full  mt-9 inline-block"
-            >
-              Read more
-            </Link>
-          </div>
-
-          <div className="border border-colorTwo rounded-lg p-5 bg-colorTwo text-white shadow-xl">
-            <div>
-
-              <div className="text-3xl mt-2 font-semibold">
-                IDEA BASED WEBSITES
-              </div>
-            </div>
-
-            <div className="text-gray-300 mt-6">
-              An idea-based website is a digital platform centered around
-              sharing and exploring concepts, innovations, or creative thoughts.
-              Unlike traditional websites that focus on selling products or
-              providing information, idea-based websites serve as forums for
-              brainstorming, collaboration, and inspiration. These sites often
-              feature usergenerated content, discussions, and multimedia
-              presentations to foster engagement and exchange of ideas among a
-              community of users. Idea-based websites.
-            </div>
-
-            <Link
-              to={"/website-types"}
-              className="bg-colorThree  px-8 py-3 text-white font-semibold  text-xs rounded-full  mt-9 inline-block"
-            >
-              Read more
-            </Link>
-          </div>
-
-          <div className="border border-colorTwo rounded-lg p-5 bg-colorTwo text-white shadow-xl">
-            <div>
-
-              <div className="text-3xl mt-2 font-semibold">
-                CORPORATE WEBSITES
-              </div>
-            </div>
-
-            <div className="text-gray-300 mt-6">
-              A corporate website serves as the digital face of a company,
-              providing a comprehensive overview of its identity, offerings, and
-              values to various stakeholders. It acts as a central hub for
-              showcasing products or services, sharing company news and updates,
-              and facilitating communication with customers, investors, and job
-              seekers. Corporate websites are meticulously crafted to reflect
-              the brand's personality and establish credibility, often featuring
-              sleek designs, compelling content, and user-friendly interfaces.
-              They play a crucial role in building brand awareness, fostering
-              customer trust, and driving business growth by serving as a
-              primary touchpoint for online interactions and engagements.
-              Additionally, corporate websites serve as valuable platforms for
-              promoting corporate social responsibility initiatives, attracting
-              talent, and maintaining transparent communication with
-              stakeholders, contributing to the overall success and reputation
-              of the company.
-            </div>
-
-            <Link
-              to={"/website-types"}
-              className="bg-colorThree  px-8 py-3 text-white font-semibold  text-xs rounded-full  mt-9 inline-block"
-            >
-              Read more
-            </Link>
-          </div>
-
-          <div className="border border-colorTwo rounded-lg p-5 bg-colorTwo text-white shadow-xl">
-            <div>
-
-              <div className="text-3xl mt-2 font-semibold">Web Portals</div>
-            </div>
-
-            <div className="text-gray-300 mt-6">
-              A web portal website serves as a gateway or centralized access
-              point to a variety of information, services, and resources
-              available on the internet. It typically offers users a
-              customizable homepage with links to news, email, search engines,
-              weather updates, and other commonly used features. Web portals
-              often cater to specific interests or demographics, such as
-              business professionals, students, or enthusiasts of a particular
-              field. They aim to simplify internet navigation by providing a
-              single interface where users can access a wide array of content
-              and tools. Web portals may also offer personalized content based
-              on user preferences, making them convenient hubs for accessing
-              online resources efficiently.
-            </div>
-
-            <Link
-              to={"/website-types"}
-              className="bg-colorThree  px-8 py-3 text-white font-semibold  text-xs rounded-full  mt-9 inline-block"
-            >
-              Read more
-            </Link>
-          </div>
-        </div>
+        <ReadMoreTiles title={"Web Portals"}>
+          A web portal website serves as a gateway or centralized access point
+          to a variety of information, services, and resources available on the
+          internet. It typically offers users a customizable homepage with links
+          to news, email, search engines, weather updates, and other commonly
+          used features. Web portals often cater to specific interests or
+          demographics, such as business professionals, students, or enthusiasts
+          of a particular field. They aim to simplify internet navigation by
+          providing a single interface where users can access a wide array of
+          content and tools. Web portals may also offer personalized content
+          based on user preferences, making them convenient hubs for accessing
+          online resources efficiently.
+        </ReadMoreTiles>
       </div>
+
+
+
+
+
+
       {/* Faq */}
       <div className="mt-24">
         <div className="text-4xl font-semibold text-center ">
@@ -377,9 +287,8 @@ const Webdesigning = () => {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className={`w-6 h-6 transition-all duration-200  ${
-                    active === 1 && `rotate-180`
-                  }`}
+                  className={`w-6 h-6 transition-all duration-200  ${active === 1 && `rotate-180`
+                    }`}
                 >
                   <path
                     strokeLinecap="round"
@@ -391,9 +300,8 @@ const Webdesigning = () => {
             </div>
 
             <div
-              className={`h-0 overflow-hidden transition-all duration-200 mt-0 ${
-                active === 1 && `  h-auto overflow-visible mt-6`
-              } `}
+              className={`h-0 overflow-hidden transition-all duration-200 mt-0 ${active === 1 && `  h-auto overflow-visible mt-6`
+                } `}
             >
               Website design is important for several reasons. First and
               foremost, a well-designed website can help to establish
@@ -430,9 +338,8 @@ const Webdesigning = () => {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className={`w-6 h-6 transition-all duration-200  ${
-                    active === 2 && `rotate-180`
-                  }`}
+                  className={`w-6 h-6 transition-all duration-200  ${active === 2 && `rotate-180`
+                    }`}
                 >
                   <path
                     strokeLinecap="round"
@@ -444,9 +351,8 @@ const Webdesigning = () => {
             </div>
 
             <div
-              className={`h-0 overflow-hidden transition-all duration-200 mt-0 ${
-                active === 2 && `  h-auto overflow-visible mt-6`
-              } `}
+              className={`h-0 overflow-hidden transition-all duration-200 mt-0 ${active === 2 && `  h-auto overflow-visible mt-6`
+                } `}
             >
               The time it takes to design a website can vary depending on a
               number of factors, such as the size and complexity of the website,
@@ -484,9 +390,8 @@ const Webdesigning = () => {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className={`w-6 h-6 transition-all duration-200  ${
-                    active === 3 && `rotate-180`
-                  }`}
+                  className={`w-6 h-6 transition-all duration-200  ${active === 3 && `rotate-180`
+                    }`}
                 >
                   <path
                     strokeLinecap="round"
@@ -498,9 +403,8 @@ const Webdesigning = () => {
             </div>
 
             <div
-              className={`h-0 overflow-hidden transition-all duration-200 mt-0 ${
-                active === 3 && `  h-auto overflow-visible mt-6`
-              } `}
+              className={`h-0 overflow-hidden transition-all duration-200 mt-0 ${active === 3 && `  h-auto overflow-visible mt-6`
+                } `}
             >
               The cost of website designing service depends on the scope of
               work, once we understand the complete scope of work than only we
@@ -524,9 +428,8 @@ const Webdesigning = () => {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className={`w-6 h-6 transition-all duration-200  ${
-                    active === 4 && `rotate-180`
-                  }`}
+                  className={`w-6 h-6 transition-all duration-200  ${active === 4 && `rotate-180`
+                    }`}
                 >
                   <path
                     strokeLinecap="round"
@@ -538,9 +441,8 @@ const Webdesigning = () => {
             </div>
 
             <div
-              className={`h-0 overflow-hidden transition-all duration-200 mt-0 ${
-                active === 4 && `  h-auto overflow-visible mt-6`
-              } `}
+              className={`h-0 overflow-hidden transition-all duration-200 mt-0 ${active === 4 && `  h-auto overflow-visible mt-6`
+                } `}
             >
               Yes, incase of dynamic website or website supported by a content
               management system you can manage complete content of your website,
@@ -554,3 +456,5 @@ const Webdesigning = () => {
 };
 
 export default Webdesigning;
+
+

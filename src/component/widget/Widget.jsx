@@ -15,7 +15,7 @@ const Widget = () => {
   }, []);
   
   return (
-    <div className={`fixed space-y-4 bottom-5 right-5 md:hidden opacity-100 transition-all duration-200 translate-y-0 ${checkScroll && "pointer-events-none !opacity-0 !translate-y-9"}`}>
+    <div className={`fixed space-y-4 bottom-5 right-5 md:hidden opacity-100 transition-all duration-200 translate-y-0 z-40 ${checkScroll && "pointer-events-none !opacity-0 !translate-y-9"}`}>
       <div className=" space-y-4">
         <a href="tel:+918595357170">
           <div className=" rounded-full shadow-lg  p-4 bg-colorTwo text-white">

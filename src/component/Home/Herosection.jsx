@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 // import axios from "axios";
 import ThankyouPop from "../ThankyouPop/ThankyouPop";
+
 
 const Herosection = () => {
   const [close, setClose] = useState(false);
@@ -74,13 +75,15 @@ const Herosection = () => {
     });
   };
 
+
+
   return (
     <div className="h-[600px] relative bg-black">
       <ThankyouPop pop={pop} setPop={setPop} />
       <div className="absolute w-full h-full bg-black/50 right-0 left-0">
         <div className="container grid lg:flex items-center h-full gap-9">
           <div className="text-4xl md:text-4xl lg:text-6xl text-white font-semibold lg:w-[70%]">
-            <div>
+            <div data-aos="fade-up">
               <span
                 className="text-colorThree text-4xl lg:text-7xl leading-3 font-bold"
               >
@@ -98,28 +101,18 @@ const Herosection = () => {
 
           <div className="lg:block lg:w-[30%] hidden">
             <div className={`${close ? "hidden" : ""}`}>
-              <div className="p-6 bg-colorTwo text-white rounded-t-lg text-lg font-semibold relative flex justify-between items-center">
-                <div>Request a callback</div>
+              <div className="py-6 px-9 bg-colorTwo text-white rounded-t-lg text-lg font-semibold relative flex justify-between items-center">
+                <div> Request  a callback</div>
 
-                <svg
-                  onClick={() => setClose(true)}
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-6 h-6 cursor-pointer"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                  />
+                <svg xmlns="http://www.w3.org/2000/svg" onClick={() => setClose(true)} fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 cursor-pointer">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
                 </svg>
+
+
               </div>
               <form
                 onSubmit={handleSubmit} // Handle form submission
-                className="space-y-6 shadow-2xl w-full bg-white p-6 rounded-b-lg relative"
+                className="space-y-6 shadow-2xl w-full bg-white p-9 rounded-b-lg relative"
               >
                 <div>
                   <input
@@ -157,12 +150,14 @@ const Herosection = () => {
                     onChange={handleChange} // Handle change
                   />
                 </div>
-                <button
-                  type="submit" // Submit button
-                  className="bg-colorThree mt-4 w-full rounded-xl py-3 text-white font-bold"
-                >
-                  Submit
-                </button>
+                <div>
+                  <button
+                    type="submit" // Submit button
+                    className="bg-colorThree mt-4 w-full rounded-xl py-3 text-base text-white font-semibold"
+                  >
+                    Submit
+                  </button>
+                </div>
               </form>
             </div>
           </div>
@@ -171,7 +166,7 @@ const Herosection = () => {
 
       <img
         className="w-full h-full object-cover"
-        src="herosec/herosecbg.jpg"
+        src="herosec/herosecbg.webp"
         alt="background img"
       />
     </div>
