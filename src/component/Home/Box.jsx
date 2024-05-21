@@ -8,6 +8,9 @@ import "swiper/css/pagination";
 
 // import "./styles.css";
 
+// import required modules
+import { Pagination } from 'swiper/modules';
+
 const Slider = () => {
   const [selectedSlide, setSelectedSlide] = useState(0);
   // const [slideTwo, setSlideTwo] = useState(true);
@@ -15,6 +18,16 @@ const Slider = () => {
   // const [slideFour, setSlideFour] = useState(true);
   // const [slideFive, setSlideFive] = useState(true);
   // const [slideSix, setSlideSix] = useState(true);
+
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleSlideChange = (swiper) => {
+    setActiveIndex(swiper.realIndex);
+  };
+
+  console.log(activeIndex)
+
+
 
   return (
     <div className="pt-16">
@@ -43,26 +56,34 @@ const Slider = () => {
           pagination={{
             clickable: true,
           }}
+          onSlideChange={handleSlideChange}
+          modules={[Pagination]}
           grabCursor={true}
+          // centeredSlides={true}
+          // loop={true}
           breakpoints={{
-            740: {
+            640: {
               slidesPerView: 2,
               spaceBetween: 20,
+
             },
             1200: {
               slidesPerView: 3,
               spaceBetween: 40,
+
             },
             1524: {
               slidesPerView: 6,
-              spaceBetween: 20,
+              spaceBetween: 30,
+              initialSlide: 6
+
             },
           }}
-          className="mySwiper pe-24"
+          className="mySwiper"
         >
           <SwiperSlide>
             {/* slide 3 */}
-            <div className=" dark-shadow rounded-3xl border-2 border-gray-400  pb-8">
+            <div  className={ `dark-shadow rounded-3xl border-2 border-gray-400  pb-8 `}>
               <div className="bg-colorTwo text-center p-6 py-8 rounded-t-3xl text-white">
                 <div className="text-xl font-semibold">Standard</div>
                 <div className="text-xl font-semibold">Plan</div>
@@ -96,11 +117,11 @@ const Slider = () => {
                       </div>
                       <div className="flex gap-4 items-center">
                         <img src="premium/ttick.webp" className="w-6" alt="" />
-                        <div>1 Year Free Domain Name ( .com .in .org )</div>
+                        <div>1 Year Free Domain Name  ( .com .in .org )</div>
                       </div>
                       <div className="flex gap-4 items-center">
                         <img src="premium/ttick.webp" className="w-6" alt="" />
-                        <div>1 Year Free Hosting ( Unlimited Space )</div>
+                        <div>1 Year Free Hosting (Unlimited Space)</div>
                       </div>
                       <div className="flex gap-4 items-center">
                         <img src="premium/ttick.webp" className="w-6" alt="" />
@@ -210,9 +231,9 @@ const Slider = () => {
             </div>
           </SwiperSlide>
 
-          <SwiperSlide>
+          <SwiperSlide className="scale-90">
             {/* slide 1 p */}
-            <div className=" dark-shadow rounded-3xl premium-bg golden-sha pb-8">
+            <div className=" dark-shadow rounded-3xl premium-bg golden-sha pb-8 ">
               <img
                 src="premium/star.webp "
                 className="absolute top-[-65px] w-32 m-auto left-0 right-0 ms-auto me-auto"
@@ -361,7 +382,7 @@ const Slider = () => {
               </div>
 
               {selectedSlide !== 2 && (
-                <div className="flex justify-center mt-6 text-sm">
+                <div className="flex justify-center mt-8 text-sm">
                   <div
                     className="m-auto cursor-pointer px-6 py-3 bg-colorThree rounded-xl text-white inline-block"
                     onClick={() => setSelectedSlide(2)}
@@ -716,7 +737,7 @@ const Slider = () => {
               </div>
 
               {selectedSlide !== 6 && (
-                <div className="flex justify-center mt-6 text-sm">
+                <div className="flex justify-center mt-8 text-sm">
                   <div
                     className="m-auto cursor-pointer px-6 py-3 bg-colorThree rounded-xl text-white inline-block"
                     onClick={() => setSelectedSlide(6)}
