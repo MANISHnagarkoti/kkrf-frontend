@@ -112,3 +112,10 @@ input[type="number"]::-webkit-outer-spin-button {
   transform: scale(1.1); /* Scale up effect */
   transition: transform 0.5s ease; /* Transition animation */
 }
+
+/* {{{{{{{{[[gradient]]}}}}}}}} */
+
+.linearGr{
+  background: rgb(30,30,30);
+  background: linear-gradient(185deg, rgba(30,30,30,1) 46%, rgba(2,186,178,1) 87%);
+}

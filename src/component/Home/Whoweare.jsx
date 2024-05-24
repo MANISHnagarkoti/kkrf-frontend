@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import Marquee from "react-fast-marquee";
+import { json } from "react-router-dom";
 
 const Whoweare = () => {
+
+
+
+
+
   return (
     <div>
+
+
+
+      {/* {{{{{{{{{{{{{{{{{{{{}}}}}}}}}}}}}}}}}}}} */}
+
+
+
+
       <div className="bg-white rounded-3xl p-4 py-24">
         <div className="text-3xl font-semibold text-center text-colorTwo">
           <span className="text-colorThree font-semibold"> TRUSTED BY </span>{" "}

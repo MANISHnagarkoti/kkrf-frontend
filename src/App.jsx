@@ -17,6 +17,8 @@ import Whatsapp from "./component/whatsapp/Whatsapp";
 import { useEffect, useState } from "react";
 import Aos from "aos";
 import 'aos/dist/aos.css';
+import Landing from "./pages/Landing/Landing";
+import Showdynamic from "./component/Showdynamic/Showdynamic";
 
 function App() {
 
@@ -40,13 +42,20 @@ function App() {
     <>
       <Router>
         <ScrollToTop />
-        <Navbar />
+
+        <Showdynamic>
+          <Navbar />
+        </Showdynamic>
+
+
 
         <Routes>
+          <Route exact path="/landing" element={<Landing />} />
           <Route exact path="/" element={<Home />} />
           <Route exact path="/web-designing" element={<Webdesigning />} />
           <Route exact path="/web-development" element={<WebDevelopment />} />
           <Route exact path="/about-us" element={<AboutUs />} />
+
           <Route
             exact
             path="/mobile-development"
@@ -62,7 +71,12 @@ function App() {
           <Route exact path="/career" element={<Career />} />
         </Routes>
 
+
+        <Showdynamic>
         <Footer />
+        </Showdynamic>
+
+  
 
         {/* {{{{{{{{{{{Message and call us widget}}}}}}}}}}} */}
         <Widget />

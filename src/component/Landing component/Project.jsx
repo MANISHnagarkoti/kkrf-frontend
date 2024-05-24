@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import FormPopup from "../FormPopup/FormPopup";
 import ThankyouPop from "../ThankyouPop/ThankyouPop";
-
-const Talk = () => {
+const Project = () => {
 
     const [pop, setPop] = useState(false)
 
@@ -74,9 +73,9 @@ const Talk = () => {
 
 
     return (
-        <div className="py-20 bg-colorTwo mt-24">
+        <div className=" bg-colorTwo mt-24" style={{ background: "url(herosec/herosecbg.webp)", backgroundRepeat: "no-repeat", backgroundSize: "cover" , backgroundPosition:"center" }}>
 
-            <div className="text-center text-2xl md:text-4xl text-white">
+            <div className="text-center text-2xl md:text-4xl text-white bg-black/40 h-full py-20">
                 <div className="font-semibold">
                     Let's Talk About Your{" "}
                     <span className="text-colorThree font-semibold">Project</span>
@@ -86,11 +85,11 @@ const Talk = () => {
                     onClick={() => setPop(true)}
                     className="bg-colorThree mt-12 px-16 py-3 text-white font-semibold text-2xl rounded-lg"
                 >
-                    Let's Connect
+                    Fill It
                 </button>
             </div>
 
-
+            <img src="" alt="" />
 
 
 
@@ -172,6 +171,6 @@ const Talk = () => {
 
         </div>
     );
-};
+}
 
-export default Talk;
+export default Project

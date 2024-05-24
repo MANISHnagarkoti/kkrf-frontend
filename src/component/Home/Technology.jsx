@@ -11,57 +11,57 @@ const Technology = () => {
             <div className='grid grid-cols-4  max-w-[700px] m-auto mt-9'>
 
                 <div className='border-e border-b border-gray-300 flex justify-center items-center p-6'>
-                    <img src="technology/html.webp" className='w-24 object-contain' alt="" />
+                    <img src="technology/html.jpg" className='w-24 object-contain' alt="" />
                 </div>
                 <div className='border-e border-b border-gray-300 flex justify-center items-center p-6'>
-                    <img src="technology/micro.webp" className='w-24 object-contain' alt="" />
+                    <img src="technology/micro.jpg" className='w-24 object-contain' alt="" />
                 </div>
                 <div className='border-b border-gray-300 flex justify-center items-center p-6'>
-                    <img src="technology/php.webp" className='w-24 object-contain' alt="" />
+                    <img src="technology/php.jpg" className='w-24 object-contain' alt="" />
                 </div>
                 <div className='border-s border-b border-gray-300 flex justify-center items-center p-6'>
-                    <img src="technology/angular.webp" className='w-24 object-contain' alt="" />
+                    <img src="technology/angular.jpg" className='w-24 object-contain' alt="" />
                 </div>
 
                 <div className='border-e border-b border-gray-300 flex justify-center items-center p-6'>
-                    <img src="technology/jquery.webp" className='w-24 object-contain' alt="" />
+                    <img src="technology/jquery.jpg" className='w-24 object-contain' alt="" />
                 </div>
                 <div className='border-e border-b border-gray-300 flex justify-center items-center p-6'>
-                    <img src="technology/nodejs.webp" className='w-24 object-contain' alt="" />
+                    <img src="technology/nodejs.jpg" className='w-24 object-contain' alt="" />
                 </div>
                 <div className='border-b border-gray-300 flex justify-center items-center p-6'>
-                    <img src="technology/reactjs.webp" className='w-24 object-contain' alt="" />
+                    <img src="technology/reactjs.jpg" className='w-24 object-contain' alt="" />
                 </div>
                 <div className='border-s border-b border-gray-300 flex justify-center items-center p-6'>
-                    <img src="technology/wordpress.webp" className='w-24 object-contain' alt="" />
+                    <img src="technology/wordpress.jpg" className='w-24 object-contain' alt="" />
                 </div>
 
 
                 <div className='border-e border-b border-gray-300 flex justify-center items-center p-6'>
-                    <img src="technology/magento.webp" className='w-24 object-contain' alt="" />
+                    <img src="technology/magento.jpg" className='w-24 object-contain' alt="" />
                 </div>
                 <div className='border-e border-b border-gray-300 flex justify-center items-center p-6'>
-                    <img src="technology/woo.webp" className='w-24 object-contain' alt="" />
+                    <img src="technology/woo.jpg" className='w-24 object-contain' alt="" />
                 </div>
                 <div className='border-b border-gray-300 flex justify-center items-center p-6'>
-                    <img src="technology/shopify.webp" className='w-24 object-contain' alt="" />
+                    <img src="technology/shopify.jpg" className='w-24 object-contain' alt="" />
                 </div>
                 <div className='border-s border-b border-gray-300 flex justify-center items-center p-6'>
-                    <img src="technology/mysql.webp" className='w-24 object-contain' alt="" />
+                    <img src="technology/mysql.jpg" className='w-24 object-contain' alt="" />
                 </div>
 
 
                 <div className='border-e  border-gray-300 flex justify-center items-center p-6'>
-                    <img src="technology/sql.webp" className='w-24 object-contain' alt="" />
+                    <img src="technology/sql.jpg" className='w-24 object-contain' alt="" />
                 </div>
                 <div className='border-e  border-gray-300 flex justify-center items-center p-6'>
-                    <img src="technology/umbraco.webp" className='w-24 object-contain' alt="" />
+                    <img src="technology/umbraco.jpg" className='w-24 object-contain' alt="" />
                 </div>
                 <div className=' border-gray-300 flex justify-center items-center p-6'>
-                    <img src="technology/micro.webp" className='w-24 object-contain' alt="" />
+                    <img src="technology/micro.jpg" className='w-24 object-contain' alt="" />
                 </div>
                 <div className='border-s  border-gray-300 flex justify-center items-center p-6'>
-                    <img src="technology/php.webp" className='w-24 object-contain' alt="" />
+                    <img src="technology/php.jpg" className='w-24 object-contain' alt="" />
                 </div>
             </div>
 
