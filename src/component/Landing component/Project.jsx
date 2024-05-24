@@ -125,7 +125,7 @@ const Project = () => {
                                 />
                             </div>
                             <div>
-                                <div>phno no</div>
+                                <div>phno</div>
                                 <input
                                     name="phno"
                                     // placeholder="phno No*"

@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <div className='container'>
             <div className='flex justify-between py-4'>
-                <img src="logo/logo.png" className='w-32' alt="" />
+                <img src="logo/logo.png" className='w-32 mix-blend-multiply' alt="" />
 
                 <a href="tel:+918595357170">
                     <div className='rounded-full border-2 border-colorTwo flex gap-4 items-center px-6 py-2 cursor-pointer'>

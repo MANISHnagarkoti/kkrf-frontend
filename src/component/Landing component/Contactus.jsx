@@ -125,6 +125,7 @@ const Contactus = () => {
                             placeholder="Enter Your Mobile No.*"
                             type="number"
                             value={formData.phno}
+                            className='rounded-2xl py-4 bg-none'
                             onChange={collectData}
                         />
                     </div>
@@ -146,7 +147,7 @@ const Contactus = () => {
                             placeholder="Your query"
                             value={formData.query}
                             onChange={collectData}
-                            className="border w-full rounded-lg border-gray-300 p-3 max-h-[150px] min-h-[60px]"
+                            className="border w-full rounded-2xl border-gray-300 p-3 max-h-[150px] min-h-[60px]"
                         ></textarea>
 
                     </div>
